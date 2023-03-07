@@ -19,7 +19,7 @@ resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
 }
 
 module vnet 'vnet.bicep' = {
-  name: '<linked-deployment-name>'
+  name: 'vnetDeploy'
   scope: resourceGroup(rg.name)
   params: {
     location : location
