@@ -74,8 +74,6 @@ resource sqlDB 'Microsoft.Sql/servers/databases@2021-05-01-preview' = {
     name: 'GP_S_Gen5_1'
   }
   properties: {
-    autoPauseDelay: 60
-    maxSizeBytes: 2000000000
     minCapacity: any('0.5')
   }
 }
