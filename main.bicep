@@ -12,7 +12,7 @@ resource rg 'Microsoft.Resources/resourceGroups@2021-04-01' = {
   location: location
   tags: {
     product: 'data-service'
-    data-product: 'knmi-data'
+    data_product: 'knmi-data'
   }
   managedBy: 'string'
   properties: {}
