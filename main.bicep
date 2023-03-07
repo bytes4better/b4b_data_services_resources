@@ -29,6 +29,7 @@ module vnet 'vnet.bicep' = {
   name: 'vnetDeploy'
   scope: resourceGroup(rg.name)
   params: {
+    prefixName: prefixName
     location : location
     vnetName: vnetName
     administratorLogin: administratorLogin
