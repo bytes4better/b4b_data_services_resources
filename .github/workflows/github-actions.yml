@@ -25,5 +25,5 @@ jobs:
         region: 'westeurope'
         scope: 'subscription'
         template: ./main.bicep
-        parameters: 'prefixName=b4b-dta-svc environment=$ENVIRONMENT'
+        parameters: 'prefixName=b4b-dta-svc environment=${{ env.ENVIRONMENT }}'
         failOnStdErr: false
