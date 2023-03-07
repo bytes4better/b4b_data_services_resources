@@ -25,5 +25,5 @@ jobs:
         region: 'westeurope'
         scope: 'subscription'
         template: ./main.bicep
-        parameters: 'prefixName=b4b-dta-svc environment=${{ env.ENVIRONMENT }}'
+        parameters: 'prefixName=b4b-dta-svc environment=${{ env.ENVIRONMENT }} administratorLogin=${{secrets.MSSQL_LOGIN_NAME}}  administratorLoginPassword=${{secrets.MSSQL_LOGIN_PWD}}'
         failOnStdErr: false
