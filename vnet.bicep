@@ -66,7 +66,7 @@ resource sqlServer 'Microsoft.Sql/servers@2022-05-01-preview' = {
 
 resource sqlDB 'Microsoft.Sql/servers/databases@2021-05-01-preview' = {
   name: sqlDBName
-  location: resourceGroup().location
+  location: location
   parent: sqlServer
   sku: {
     capacity: 1
