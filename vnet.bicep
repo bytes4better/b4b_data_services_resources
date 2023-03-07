@@ -1,4 +1,3 @@
-param resourceGroupName string
 param location string
 param vnetName string
 
