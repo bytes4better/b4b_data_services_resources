@@ -2,7 +2,8 @@ on: [push]
 name: Azure ARM
 
 env:
-  ENVIRONMENT: ${{ env.ENVIRONMENT }}
+  ENVIRONMENT: ${{ vars.ENVIRONMENT }}
+
 jobs:
   build-and-deploy:
     environment: dev
