@@ -2,7 +2,7 @@
 @maxLength(20)
 param prefixName string = 'b4b-dta-svc'
 param environment string = 'dev'
-param resourceGroupName string = '${prefixName}-rg-{$environment}'
+param resourceGroupName string = '${prefixName}-rg-${environment}'
 param location string = 'westeurope'
 
 targetScope = 'subscription'
