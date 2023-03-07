@@ -1,5 +1,6 @@
 param location string
 param vnetName string
+param prefixName string
 
 @description('Address prefix')
 param vnetAddressPrefix string = '10.0.0.0/16'
@@ -50,7 +51,7 @@ param administratorLogin string
 param administratorLoginPassword string
 
 @description('The name of the SQL logical server.')
-param serverName string = uniqueString('sql', resourceGroup().id)
+param serverName string = '${prefixName}-sqlserver}'
 
 @description('The name of the SQL Database.')
 param sqlDBName string = 'SampleDB'
